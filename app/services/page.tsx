@@ -27,7 +27,6 @@ const ServicesPage = () => {
         "Cost-effective marketing",
         "Social impact messaging"
       ],
-      pricing: "Starting at $0.75 per bottle",
       color: "from-blue-500 to-blue-600"
     },
     {
@@ -51,7 +50,6 @@ const ServicesPage = () => {
         "Versatile marketing tool",
         "High-quality materials"
       ],
-      pricing: "Starting at $0.85 per bottle",
       color: "from-green-500 to-green-600"
     },
     {
@@ -75,7 +73,6 @@ const ServicesPage = () => {
         "Client impression management",
         "Convenient bulk ordering"
       ],
-      pricing: "Volume pricing available",
       color: "from-purple-500 to-purple-600"
     },
     {
@@ -99,7 +96,6 @@ const ServicesPage = () => {
         "Guest satisfaction",
         "Brand visibility"
       ],
-      pricing: "Custom event pricing",
       color: "from-orange-500 to-orange-600"
     },
     {
@@ -123,7 +119,6 @@ const ServicesPage = () => {
         "Corporate social responsibility",
         "Positive brand association"
       ],
-      pricing: "Sponsored programs available",
       color: "from-cyan-500 to-cyan-600"
     }
   ]
@@ -214,7 +209,6 @@ const ServicesPage = () => {
 
                 {/* Benefits & Pricing */}
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-3">Benefits:</h4>
                       <ul className="space-y-2">
@@ -226,16 +220,6 @@ const ServicesPage = () => {
                         ))}
                       </ul>
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-3">Pricing:</h4>
-                      <p className="text-2xl font-display font-bold text-primary-600 mb-2">
-                        {service.pricing}
-                      </p>
-                      <p className="text-sm text-gray-500">
-                        Volume discounts available
-                      </p>
-                    </div>
-                  </div>
                 </div>
 
                 <button className={`bg-gradient-to-r ${service.color} text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2`}>

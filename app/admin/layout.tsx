@@ -2,11 +2,11 @@
 
 import { useState, createContext, useContext } from 'react'
 import { motion } from 'framer-motion'
-import { 
-  BarChart3, 
-  Package, 
-  Image as ImageIcon, 
-  Users, 
+import {
+  BarChart3,
+  Package,
+  Image as ImageIcon,
+  Users,
   MessageSquare,
   Settings,
   LogOut,
@@ -27,10 +27,10 @@ const AuthContext = createContext<{
 }>({
   isLoggedIn: false,
   login: () => false,
-  logout: () => {}
+  logout: () => { }
 })
 
-export const useAuth = () => useContext(AuthContext)
+
 
 const AdminLayout = ({ children }: { children: React.ReactNode }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -92,7 +92,7 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
                   type="text"
                   id="username"
                   value={loginData.username}
-                  onChange={(e) => setLoginData({...loginData, username: e.target.value})}
+                  onChange={(e) => setLoginData({ ...loginData, username: e.target.value })}
                   className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300"
                   placeholder="Enter username"
                   required
@@ -110,7 +110,7 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
                   type={showPassword ? 'text' : 'password'}
                   id="password"
                   value={loginData.password}
-                  onChange={(e) => setLoginData({...loginData, password: e.target.value})}
+                  onChange={(e) => setLoginData({ ...loginData, password: e.target.value })}
                   className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300"
                   placeholder="Enter password"
                   required

@@ -10,7 +10,6 @@ const ProductsSection = () => {
       name: "Standard Water Bottles",
       description: "High-quality, eco-friendly water bottles perfect for everyday distribution and basic branding needs.",
       image: "https://images.unsplash.com/photo-1523362628745-0c100150b504?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      price: "Starting at $0.50",
       icon: Check,
       features: [
         "500ml capacity",
@@ -26,7 +25,6 @@ const ProductsSection = () => {
       name: "Custom Label Water Bottles",
       description: "Premium bottles with full-color custom labels, perfect for marketing campaigns and brand promotion.",
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      price: "Starting at $0.75",
       icon: Star,
       features: [
         "Full-color printing",
@@ -42,7 +40,6 @@ const ProductsSection = () => {
       name: "Premium Water Bottles",
       description: "Luxury glass and stainless steel bottles with premium branding for high-end corporate events.",
       image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      price: "Starting at $2.50",
       icon: Crown,
       features: [
         "Glass or stainless steel",
@@ -127,9 +124,6 @@ const ProductsSection = () => {
                     <h3 className="text-2xl font-display font-bold text-gray-900">
                       {product.name}
                     </h3>
-                    <p className="text-primary-600 font-semibold text-lg">
-                      {product.price}
-                    </p>
                   </div>
                 </div>
 
