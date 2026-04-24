@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { useAuth } from './layout'
+import { useAuth } from '../hooks/useAuth.ts'
 import {
   AdminSidebar,
   DashboardOverview,
